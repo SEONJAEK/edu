@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	    <form method="GET" 
+	    action="http://localhost:8080/edu/querytest">
+	    <!-- 듀크라는 value를 보이게 하는 것 required -->
+	    <!-- placeholder는 실제 값 아니고 힌트정도 -->
+	    <!-- type이 생략되면 default로 type="text"이다 -->
+		이름 : <input name="stname" value="듀크" required><br>
+		암호 : <input type="password" name="pwd"><br>
+		나이 : <input type="number" name="age"><br>
+		성별 : <input type="radio" name="gender" value="남자">남자
+		<input type="radio" name="gender" value="여자">여자
+		<br>
+		
+		취미 : 
+		피아노 <input type="checkbox" name="hobby" value="피아노">
+		수영 <input type="checkbox" name="hobby" value="수영">
+		독서 <input type="checkbox" name="hobby" value="독서">
+		게임 <input type="checkbox" name="hobby" value="게임">
+		<br>
+	
+		좋아하는 색 : 
+		<select name="color">
+		    <option value=""></option>
+			<option value="빨강색">RED</option>
+			<option value="파랑색">BLUE</option>
+			<option value="노랑색">YELLOW</option>
+		</select>
+		<br>
+		
+		좋아하는 음식 :
+		<br> 
+		<!-- multiple: ctrl+ 마우스로 선택하면 여러개 선택 가능 -->
+		<select name="food" size="4" multiple>
+			<option value="라면">라면</option>
+			<option value="냉면">냉면</option>
+			<option value="짜장면">짜장면</option>
+			<option value="햄버거">햄버거</option>
+			<option value="닭강정">닭강정</option>
+			<option value="육회">육회</option>
+		</select>
+		<br>
+		
+		의견 : 
+		<br>
+		<!-- hidden type: servlet요청할 때 자동으로 name, value로 전달 할 수 있음, 이번요청시 강제로 전달하고자 하는 내용을 정해놓은 것이 히든카드다 -->
+		<textarea name="op" rows="10" cols="50"></textarea><br>
+		
+		<input type="hidden" name="h_1" value="hidden으로 보낸 첫 번째 내용">
+		<input type="hidden" name="h_2" value="hidden으로 보낸 두 번째 내용"> 
+		
+		<input type="submit" value="보내기">
+		<input type="reset" value="다시작성하기">
+	</form>
+</body>
+</html>

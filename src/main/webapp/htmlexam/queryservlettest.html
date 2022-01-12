@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 폼테그 만들기 -->
+<!-- 사용자에게 입력받는 폼을 직접 전달할 수 있는 폼 -> 폼테그
+Query String(get방식)/request parameter(post방식) /쿼리 문자열/ 요청 파라미터
+: 웹 서버에 뭔가를 요청하면서 함께 전달하는 name = value형식의 문자열 -->
+<h1>입력폼 학습</h1>
+<hr>
+<!-- 메서드 방식 생략되면 : get방식임 
+action 서버프로그램의 URL/URI이 와야 함. 없으면 자기 자신을 호출하게 됨-->
+<form method="get"action="/edu/query"> <!-- http://localhost:8000/edu/query중 포트번호까지 생략 가능(같은 포트쓸때) -->
+이름 <input type="text" name="p1" required><br>
+나이 <input type="number" name="p2"><br> <!-- HTML5 -->
+좋아하는 음식 <br>
+<!-- 같은 카테고리는 name을 갖게 하고, 각각의 값의 구분은 value를 활용한다 -->
+<!-- 서버에 전달할때 name, value 형태로 전달, 모든 input 테그에 name입력은 필수다,
+name없으면 전송안해줌, value가 없으면 on이라는 속성으로 값이 전달됨 -->
+햄버거 <input type="checkbox"  name="p3" value="햄버거">
+비지찌게 <input type="checkbox"  name="p3" value="비지찌개">
+회덮밥 <input type="checkbox"  name="p3" value="회덮밥">
+돈까스 <input type="checkbox"  name="p3" value="돈까스"><br>
+<input type="submit" value="전송하기">
+<input type="reset" value="초기상태로">
+</form>                                                                                                                                                                                                                                                                                                                            
+</body>
+</html>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form method="post" action=/edu/reservation>
+<h1>자연휴양림 예약 서비스</h1>
+<hr>
+예약자명 : <input type="text" name="reservationName"><br>
+예약암호 : <input type="password" name="password"><br>
+휴양림선택 :
+<!-- 데이터는 mountain ="산음", mountaion="중마산"이런 꼴로 데이터 전달한다 -->
+산음<input type="radio" name="mountain" value="산음">
+중마산<input type="radio" name="mountain" value="중마산">
+수락산<input type="radio" name="mountain" value="수락산">
+도봉산<input type="radio" name="mountain" value="도봉산"><br>
+추가요청 : 
+바베큐<input type="checkbox" name="add_rq" value="바베큐">
+수영장<input type="checkbox" name="add_rq" value="수영장">
+낚시<input type="checkbox" name="add_rq" value="낚시">
+조식<input type="checkbox" name="add_rq" value="조식"><br>
+예약날짜: <input type="date"  name="a"><br><hr>
+<input type="submit" value="보내기">
+<input type="reset" value="다시 작성하기">
+</form>
+</body>
+</html>
